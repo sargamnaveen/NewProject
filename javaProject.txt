@@ -1,0 +1,1516 @@
+package store;
+import java.util.*;
+
+
+class oil extends CustomerDetails
+{
+	public static void oiltypes()
+	{
+		System.out.println("-------------------------------------------------------------------------------------");
+		System.out.println("                          * Welcome To The Oil Shop *                                  ");
+		System.out.println("-------------------------------------------------------------------------------------");
+		System.out.println();
+		System.out.println("1.Groundnut oil");
+		System.out.println("2.coconut oil");
+		System.out.println("3.olive oil");
+		System.out.println("4.Avocado oil");
+		System.out.println("5.Ghee");
+		System.out.println("6.Pumpkin Seedoil");
+		System.out.println("7.Walnut oil");
+		System.out.println("8.Grapeseed oil");
+		System.out.println("9.Sesame oil");
+		System.out.println("10.Hemp seed oil");
+		System.out.println();
+		System.out.println("which oil type do you want to select");
+		System.out.println();
+
+
+		Scanner sc =new Scanner(System.in);
+		int user_oil_choice= sc.nextInt();
+		switch(user_oil_choice)
+		{
+		
+		case 1:
+				System.out.println();
+				System.out.println("*******************************************************");
+				System.out.println("You have selected The Groundnut oil");
+				oil a= new oil2(); //upcasting
+				oil2 b= (oil2)a; //downcasting
+				b.gnob(); //mcs by using ref var.
+				break;
+		case 2:
+		     	System.out.println("*******************************************************");
+				System.out.println("You have selected The Coconut oil");
+				
+				oil c=new  oil3(); //upcasting
+				oil3 d=(oil3)c; //downcasting
+				d.cocoil(); //mcs by using ref var.
+				break;
+		case 3:
+			System.out.println("##################################################");
+				System.out.println("You have selected The  olive oil ");
+				oil e= new oil4(); //upcasting
+				oil4 f=(oil4)e; //Downcasting
+				f.olive(); //mcs by using ref var.
+			    break;
+		case 4:
+			 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+				System.out.println("You have selected The Avocado oil");
+		    	oil g= new oil5(); //upcasting
+				oil5  h=(oil5)g; //Downcasting
+			    h.avocado();//mcs by using ref var.
+				break;
+		case 5:
+			   
+			    System.out.println("*******************************************************");
+				System.out.println("You have selected The Ghee");
+			
+				oil i= new oil6(); //upcasting
+				oil6  j=(oil6)i; //Downcasting
+			    j.ghee();//mcs by using ref var.
+				break;
+				
+		case 6:
+			System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+				System.out.println(" You have selected The Piumpkin Seedoil");
+				
+				oil k=new oil7();
+	            oil7 l=(oil7)k;
+	            l.pumpkin();
+				
+				break;
+		case 7:
+			System.out.println("##################################################");
+				System.out.println("You have selected The Walnut oil");
+				oil m =new oil8();
+				oil8 n=(oil8)m;
+				n.walnut();
+				break;
+				
+		case 8:
+			System.out.println("===============================================");
+				System.out.println("You have selected The Grapeseed oil");
+				oil o = new oil9();
+				oil9 p=(oil9)o;
+				p.grapeseed();
+				break;
+				
+		case 9:
+			System.out.println("===============================================");
+				System.out.println("You have selected TheSesame oil");
+				oil q = new oil10();
+				oil10 r=(oil10)q;
+				r.Sesame();
+				break;
+		case 10:
+			System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+				System.out.println("You have selected The Hemp seed oil");
+				oil s=new oil11();
+				oil11 t=(oil11)s;
+				t.hemp();
+				break;
+		
+				
+				
+				default:
+					 System.out.println("");
+					 System.out.println("You Have Select the Wrong Number");
+					 System.out.println();
+					 System.out.println("wait. Directing to the return Back to the menu");
+					 System.out.println("----------->>>>>>>");
+					 oiltypes();
+					 break;
+				
+				
+		}
+
+	}
+}
+
+class oil2 extends oil
+{
+	 
+	public static void gnob() //groundnut oil
+	{
+		System.out.println("*******************************************************");
+		System.out.println("Click the Which Groundnut oil brand do you want to buy:- ");
+		System.out.println("*******************************************************");
+		
+		System.out.println("1.24 Mantra Organic Groundnut Oil");
+		
+		System.out.println("2.Conscious Food Organic Peanut Oil ");
+		System.out.println("3.Pure & Sure Organic Groundnut Oil ");
+		System.out.println("4.Anveshan Wood Pressed Groundnut Oil ");
+		System.out.println("5.Puvi Cold Pressed Groundnut Oil ");
+		System.out.println("6.Danna Groundnut Oil ");
+		System.out.println("7.Dhara Groundnut oil");
+		System.out.println("******************************************************");
+		Scanner s= new Scanner(System.in);
+		int  g =s.nextInt();
+		switch (g)
+		{
+	
+			
+		case 1:
+		 System.out.println("24 Mantra Organic Groundnut Oil");
+		 System.out.println("Name           :24 Mantra Organic Groundnut Oil ");
+		  System.out.println("Litre         : 1l");
+		  System.out.println("price         : 422/-");
+		  System.out.println("Speciality    : Organic");
+		  System.out.println("Shelf Life    : 6 months");
+		  System.out.println("");
+		
+		
+			break;
+		case 2:
+			System.out.println("Conscious Food Organic Peanut Oil ");
+			 System.out.println("Name           :Conscious Food Organic Groundnut Oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+			break;
+		case 3:
+			System.out.println("Pure & Sure Organic Groundnut Oil ");
+			 System.out.println("Name           : Pure & Sure Organic Groundnut Oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+			break;
+		case 4:
+			System.out.println("Anveshan Wood Pressed Groundnut Oil ");
+			 System.out.println("Name           : Anveshan Wood Pressed Groundnut Oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+			break;
+		case 5:
+			System.out.println("Puvi Cold Pressed Groundnut Oil ");
+			 System.out.println("Name           : Puvi Cold Pressed Groundnut Oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+			break;
+		case 6:
+			System.out.println("Danna Groundnut Oil ");
+			 System.out.println("Name           : Danna Groundnut Oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+		case 7:
+			System.out.println("11Dhara Groundnut oil");
+			 System.out.println("Name           :11Dhara Groundnut oil");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 422/-");
+			  System.out.println("Speciality    : Organic");
+			  System.out.println("Shelf Life    : 6 months");
+			  System.out.println("");
+			
+			System.out.println();
+		default:
+			System.out.println("");
+			System.out.println("You Select the Wrong number ");
+			System.out.println();
+			System.out.println("Directing to the Groundnut oil types");
+			System.out.println("----->>>");
+			gnob();
+		
+			
+			
+			
+			
+		}
+	}
+		
+
+}
+
+class oil3 extends oil
+{
+	public static void cocoil() //coconut oil 
+	{
+		System.out.println("*******************************************************");
+		System.out.println("Click the Which Coconut oil brand do you want to buy:- ");
+		System.out.println("*******************************************************");
+		
+		System.out.println("1.Parachute Oil");
+		System.out.println("2.Patanjali Oil ");
+		System.out.println("3.Kama Ayurveda Oil ");
+		System.out.println("4.Maxcare Oil ");
+		System.out.println("5.Almond Oil ");
+		System.out.println("6.Dabur Oil ");
+		System.out.println("7.Coco soul oil");
+		System.out.println("8.Meera Oil");
+		System.out.println("9.Indus Valley oil");
+		System.out.println("10.Disano oil");
+		
+		System.out.println("*******************************************************");
+		
+		
+		
+		
+		{
+		
+			Scanner s= new Scanner(System.in);
+			int  g =s.nextInt();
+			switch (g)
+			{
+		
+				
+			case 1:
+				System.out.println("Parachute oil");
+				 System.out.println("Name           : Prachute  Oil ");
+				  System.out.println("Litre         : 100ml");
+				  System.out.println("price         : 42/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				
+				break;
+				
+			case 2:
+				
+				System.out.println("Patanjali Oil ");
+				System.out.println("Name           : Patanjali  Oil ");
+				  System.out.println("Litre         : 200ml");
+				  System.out.println("price         : 85/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 3:
+				System.out.println("Kama Ayurveda Oil ");
+				System.out.println("Name           : Kama Ayurveda  Oil ");
+				  System.out.println("Litre         : 100ml");
+				  System.out.println("price         : 895/-");
+				  System.out.println("Source type   : Seasame Oil");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 4:
+				System.out.println("Maxcare Oil ");
+				System.out.println("Name            : Maxcare  Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 193/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+	            break;		
+			case 5:
+				System.out.println("Almond Oil ");
+				System.out.println("Name            : Almond  Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 193/-");
+				  System.out.println("Source type   : Almond");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				
+				break;
+			case 6:
+				System.out.println("Dabur Oil ");
+				System.out.println("Name            : Dabur Amla  Oil ");
+				  System.out.println("Litre         : 450ml");
+				  System.out.println("price         : 196/-");
+				  System.out.println("Source type   : Amla");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 7:
+				System.out.println("Coco soul oil");
+				System.out.println("Name            :Coco soul Oil ");
+				  System.out.println("Litre         : 1l");
+				  System.out.println("price         : 449/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 8:
+				System.out.println("Meera Oil");
+				System.out.println("Name            : Meera Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 177/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 9:
+				System.out.println("Indus Valley oil");
+				System.out.println("Name            : Indus Valley Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 95/-");
+				  System.out.println("Source type   : Coconut");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+				break;
+			case 10:
+				System.out.println("Disano oil");
+				System.out.println("Name            : Disano Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 95/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Use type      : Hair oil");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+			break;
+			
+			default:
+				System.out.println("");
+				System.out.println("You Select the Wrong Option ");
+				System.out.println();
+				System.out.println(" Directing to the Coconut oil types");
+				System.out.println("----->>>");
+				cocoil();
+				
+			
+			  
+			
+					}
+			
+
+			
+		}
+		
+	}
+}
+ 
+
+    class oil4 extends oil
+    {
+     public static void olive() //oilve oil
+     {
+    	 System.out.println("##################################################");
+    	 System.out.println("Click the Which Olive oil brand do you want to buy:- ");
+    	 System.out.println("##################################################");
+    	 
+    	 System.out.println("1.Figaro olive oil");
+    	 System.out.println("2.Borges olive oil");
+    	 System.out.println("3.Del monte olive oil");
+    	 System.out.println("4.Disano oilve oil");
+    	 System.out.println("5.Amazon solimo oilve oil");
+    	 System.out.println("6.Sol olive oil");
+    	 System.out.println("7.Bertolli oilve oil");
+    	 System.out.println("8.Colvitta olive oil");
+    	 System.out.println("9.Oleev olive oil");
+    	 System.out.println("10.Saffol olive oil");
+    	 
+    	 System.out.println("####################################################");
+    	 
+    	 {
+    		 Scanner a= new Scanner(System.in);
+    		 int b= a.nextInt();
+    		 
+    		 switch (b)
+    		 {
+    		 
+    		 case 1:
+ 				System.out.println("Figaro olive oil");
+ 				System.out.println("Name            : Figaro olive Oil ");
+				  System.out.println("Litre         : 200ml");
+				  System.out.println("price         : 232/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 24 months");
+				  System.out.println("");
+ 				break;
+ 				
+ 			case 2:
+ 				
+ 				System.out.println("Borges olive oil ");
+ 				System.out.println("Name            : Borges olive Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 1500/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 24 months");
+				  System.out.println("");
+ 				break;
+ 			case 3:
+ 				System.out.println("Del monte olive oil ");
+ 				System.out.println("Name            : Del monte olive Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 700/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 24 months");
+				  System.out.println("");
+
+ 				break;
+ 			case 4:
+ 				System.out.println("Disano oilve oil ");
+ 				System.out.println("Name            : Disano Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 95/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 	            break;		
+ 			case 5:
+ 				System.out.println("Amazon solimo oilve oil ");
+ 				System.out.println("Name            : Amazon solimo Oil ");
+				  System.out.println("Litre         : 750ml");
+				  System.out.println("price         : 950/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 				break;
+ 			case 6:
+ 				System.out.println("Sol olive oil ");
+ 				System.out.println("Name            : Sol  Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 635/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 				break;
+ 			case 7:
+ 				System.out.println("Bertolli oilve oil");
+ 				System.out.println("Name            : Bertolli  Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 595/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 				break;
+ 			case 8:
+ 				System.out.println("Colvitta olive oil");
+ 				System.out.println("Name            : Colvitta olive Oil ");
+				  System.out.println("Litre         : 500ml");
+				  System.out.println("price         : 635/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 				break;
+ 			case 9:
+ 				System.out.println("Oleev olive oil");
+ 				System.out.println("Name            : Oleev olive Oil ");
+				  System.out.println("Litre         : 750ml");
+				  System.out.println("price         : 635/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 				break;
+ 			case 10:
+ 				System.out.println("Saffol olive oil");
+ 				System.out.println("Name            : Saffol olive Oil ");
+				  System.out.println("Litre         : 650ml");
+				  System.out.println("price         : 400/-");
+				  System.out.println("Source type   : oilve");
+				  System.out.println("Shelf Life    : 12 months");
+				  System.out.println("");
+ 			break;
+    		 
+ 			default:
+ 				System.out.println("");
+ 				System.out.println("You Select the Wrong option ");
+ 				System.out.println();
+ 				System.out.println(" Directing to the olive oil types");
+ 				System.out.println("----->>>");
+ 				olive();
+    		 }
+    	 }
+    	 
+     }
+    }
+     
+    
+     class oil5 extends oil
+     {
+    	 public static void avocado() //avacado oil
+    	 {
+    		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+    		 
+    		 System.out.println("Click the Which Avocado oil brand do you want to buy:- ");
+    		 
+    		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+    		 
+    		 
+    		 System.out.println("1.Green dreams oil");
+        	 System.out.println("2.GoodFroot oil");
+        	 System.out.println("3.FruitHence oil");
+        	 System.out.println("4.Ulkooly oil");
+        	 System.out.println("5.Honest Harvest oil");
+        	 System.out.println("6.Sweetvocado oil");
+        	 System.out.println("7.Ripe Resources oil");
+        	 System.out.println("8.Avacado Bliss oil");
+        	 System.out.println("9.Phrootville oil");
+        	 System.out.println("10.Green Goldmines oil");
+        	 
+        	 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        	 
+        	 
+        	 {
+        		 Scanner c= new Scanner(System.in);
+        		 int d= c.nextInt();
+        		 
+        		 switch (d)
+        		 {
+        		 
+        		 case 1:
+     				System.out.println("Green dreams oil");
+     				  System.out.println("Name          : Green dreams oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 499/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     				
+     			case 2:
+     				
+     				System.out.println("GoodFroot oil ");
+     				 System.out.println("Name           : GoodFroot oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 799/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     			case 3:
+     				System.out.println("FruitHence oil ");
+     				  System.out.println("Name          : FruitHence oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 1199/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   
+     	   			  System.out.println("");
+     				break;
+     			case 4:
+     				System.out.println("Ulkooly oil ");
+     				System.out.println(  "Name          : Ulkooly oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 699/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     	            break;		
+     			case 5:
+     				System.out.println("Honest Harvest oil ");
+     				 System.out.println("Name           : Honest Harvest oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 1299/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     			case 6:
+     				System.out.println("Sweetvocado oil ");
+     				  System.out.println("Name          : Sweetvocado oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 799/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     			case 7:
+     				System.out.println("Ripe Resources oil");
+     				System.out.println(  "Name          : Ripe Resources oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 599/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+
+     				break;
+     			case 8:
+     				System.out.println("Avacado Bliss oil");
+     				  System.out.println("Name          : Avacado Bliss oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 799/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     			case 9:
+     				System.out.println("Phrootville oil");
+     				 System.out.println("Name           : Phrootville oil");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 699/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     				break;
+     			case 10:
+     				System.out.println("Green Goldmines oil");
+     				 System.out.println( "Name          : Green Goldmines oil ");
+     	   			  System.out.println("Litre         : 1l");
+     	   			  System.out.println("price         : 899/-");
+     	   			  System.out.println("source type   : seeds");
+     	   			 System.out.println("Shelf Life     : 24months");
+     	   			  System.out.println("");
+     			break;
+        		 
+     			default:
+     				System.out.println("");
+     				System.out.println("You Select the Wrong option ");
+     				System.out.println("");
+     				System.out.println(" Directing to the Avocado oil types");
+     				System.out.println("----->>>");
+     				avocado();
+        		 }
+    	 }
+     }
+   } 
+      
+     
+     class oil6 extends oil
+     {
+    	 public static void ghee()
+    	 {
+    		    System.out.println("*******************************************************");
+    	     	System.out.println("Click the Which Ghee brand do you want to buy:- ");
+    			System.out.println("*******************************************************");
+    			
+    			System.out.println("1.Nestle Everyday Shahi Ghee");
+    			System.out.println("2.Mother Dairy pure Healthy Ghee ");
+    			System.out.println("3.Amul-pure Ghee ");
+    			System.out.println("4.Aashirwad Svasti Pure Cow Ghee ");
+    			System.out.println("5.Patanjali Cow's Ghee ");
+    			System.out.println("6.Nandini Pure Cow Ghee ");
+    			System.out.println("7.Anveshan A2 Desi Cow Ghee");
+    			System.out.println("8.Telagaon Farms Pure Cow Ghee ");
+    			System.out.println("9.GirOrganic A2 Pure Ghee");
+    			System.out.println("10.Two Brothers Organic Pure A2 Cow Ghee");
+    			
+    			System.out.println("*******************************************************");
+    			
+    			 {
+            		 Scanner c= new Scanner(System.in);
+            		 int d= c.nextInt();
+            		 
+            		 switch (d)
+            		 {
+            		 
+            		 case 1:
+         			System.out.println("Nestle Everyday Shahi Ghee");
+         		   	 System.out.println("Name          : Nestle Everyday Shahi Ghee");
+           		     System.out.println("Litre         : 1l");
+           		     System.out.println("price         : 499/-");
+           		     System.out.println("source type   : Cow Milk");
+           		  System.out.println("Shelf Life     : 24months");
+           			 System.out.println("");
+         				break;
+         				
+         			case 2:
+         				
+         				System.out.println("Mother Dairy pure Healthy Ghee ");
+         			 System.out.println("Name           : Mother Dairy pure Healthy Ghee");
+           			  System.out.println("Litre         : 1l");
+           			  System.out.println("price         : 799/-");
+           			  System.out.println("source type   : Cow Milk");
+           			 System.out.println("Shelf Life     : 24months");
+           			  System.out.println("");
+         				break;
+         			case 3:
+         				System.out.println("Amul-pure Ghee");
+         			 System.out.println("Name           : Amul-pure Ghee");
+           			  System.out.println("Litre         : 1l");
+           			  System.out.println("price         : 1199/-");
+           			  System.out.println("source type   : Cow Milk");
+           			 System.out.println("Shelf Life     : 24months");
+           			  System.out.println("");
+         				break;
+         			case 4:
+         				System.out.println("Aashirwad Svasti Pure Cow Ghee  ");
+         				  System.out.println("Name          : Aashirwad Svasti Pure Cow Ghee");
+            			  System.out.println("Litre         : 1l");
+            			  System.out.println("price         : 699/-");
+            			  System.out.println("source type   : Cow Milk");
+            			  System.out.println("Shelf Life     : 24months");
+            			  System.out.println("");
+         	            break;		
+         			case 5:
+         				System.out.println("Patanjali Cow's Ghee  ");
+         			 System.out.println( "Name          : Patanjali Cow's Ghee");
+           			  System.out.println("Litre         : 1l");
+           			  System.out.println("price         : 1299/-");
+           			  System.out.println("source type   : Cow Milk");
+           			 System.out.println("Shelf Life     : 24months");
+           			  System.out.println("");
+         				break;
+         			case 6:
+         				System.out.println("Nandini Pure Cow Ghee");
+         			System.out.println("Name            : Nandini Pure Cow Ghee");
+          			  System.out.println("Litre         : 1l");
+          			  System.out.println("price         : 799/-");
+          			  System.out.println("source type   : Cow Milk");
+          			 System.out.println("Shelf Life     : 24months");
+          			  System.out.println("");
+         				break;
+         			case 7:
+         				System.out.println("Anveshan A2 Desi Cow Ghee");
+         				  System.out.println("Name          : Anveshan A2 Desi Cow Ghee");
+            			  System.out.println("Litre         : 1l");
+            			  System.out.println("price         : 599/-");
+            			  System.out.println("source type   : Cow Milk");
+            			  System.out.println("Shelf Life     : 24months");
+            			  System.out.println("");
+         				break;
+         			case 8:
+         				System.out.println("Telagaon Farms Pure Cow Ghee ");
+         				  System.out.println("Name          : Telagaon Farms Pure Cow Ghee");
+            			  System.out.println("Litre         : 1l");
+            			  System.out.println("price         : 799/-");
+            			  System.out.println("source type   : Cow Milk");
+            			  System.out.println("Shelf Life     : 24months");
+            			  System.out.println("");
+         				break;
+         			case 9:
+         				System.out.println("GirOrganic A2 Pure Ghee");
+         				  System.out.println("Name          : GirOrganic A2 Pure Ghee");
+            			  System.out.println("Litre         : 1l");
+            			  System.out.println("price         : 699/-");
+            			  System.out.println("source type   : Cow Milk");
+            			  System.out.println("Shelf Life     : 24months");
+            			  System.out.println("");
+         				break;
+         			case 10:
+         				System.out.println("Two Brothers Organic Pure A2 Cow Ghee");
+         				  System.out.println("Name          : Two Brothers Organic Pure A2 Cow Ghee ");
+            			  System.out.println("Litre         : 1l");
+            			  System.out.println("price         : 899/-");
+            			  System.out.println("source type   : Cow Milk");
+            			  System.out.println("Shelf Life     : 24months");
+            			  System.out.println("");
+         			break;
+            		 
+         			default:
+         				System.out.println("");
+         				System.out.println("You Select the Wrong option ");
+         				System.out.println();
+         				System.out.println("Directing to the ghee Types");
+         				System.out.println("----->>>");
+         				ghee();
+            		 }
+    			 }
+    		 
+    	 }
+     }
+     
+   
+   	 
+ class oil7 extends oil
+ {
+	 public static void pumpkin() 
+	 {
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 System.out.println("Click the Which Pumpkin oil brand do you want to buy:- ");
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 
+		 System.out.println("1.Pumpkin Seed pumpkin oil");
+		 System.out.println("2.La Tourangelle pumpkin oil");
+		 System.out.println("3.8 Oz Liquid Gold Seed pumpkin oil ");
+		 System.out.println("4.16 Oz premiuim Seed pumpkin oil");
+		 System.out.println("5.12 Oz Premium pumpkin oil");
+		 System.out.println("6.US Organic Seed pumpkin oil");
+		 System.out.println("7.Melrose Organic pumpkin Seed oil");
+		 System.out.println("");
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 
+		 Scanner a = new Scanner(System.in);
+		  int b= a.nextInt();
+		  
+		  switch(b)
+		  {
+		  case 1:
+			  System.out.println("Pumpkin Seed pumpkin oil");
+			  System.out.println("Name          : Pumpkin Seed pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 899/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+		  case 2:
+			  System.out.println("La Tourangelle pumpkin oil");
+			  System.out.println("Name          : La Tourangelle pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 799/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 3:
+			  System.out.println("8 Oz Liquid Gold Seed pumpkin oil");
+			  System.out.println("Name          : 8 Oz Liquid Gold Seed pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 799/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  
+		  case 4:
+			  System.out.println("16 Oz premiuim Seed pumpkin oil");
+			  System.out.println("Name          : 16 Oz premiuim Seed pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 999/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 5:
+			  System.out.println("12 Oz Premium pumpkin oil ");
+			  System.out.println("Name          : 12 Oz Premium  pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 1199/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 6:
+			  System.out.println("US Organic Seed pumpkin oil ");
+			  System.out.println("Name          : US Organic Seed pumpkin oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 1099/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 7:
+			  System.out.println("Melrose Organic pumpkin Seed oil ");
+			  System.out.println("Name          : Melrose Organic pumpkin Seed oil ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 999/-");
+			  System.out.println("source type   : Pumpkin oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+			  default:
+					System.out.println("");
+     				System.out.println("You Select the Wrong option ");
+     				System.out.println();
+     				System.out.println("Directing to the walnut oil");
+     				System.out.println("----->>>");
+     				pumpkin();
+     				
+
+			  
+			  
+			  
+		  }
+		  
+	 }
+ }
+
+ class oil8 extends oil
+ {
+	 public static void walnut()
+	 {
+		 System.out.println("##################################################");
+		 System.out.println("Click the Which Walnut oil brand do you want to buy:- ");
+		 System.out.println("##################################################");
+		 
+		 System.out.println("1.Indic Wisdom Wood pressed ");
+		 System.out.println("2.caraway ");
+		 System.out.println("3.H & O ");
+		 System.out.println("4.Hillipure Organic Cold pressed");
+		 System.out.println("5.Nature's Absolute Organic");
+		 System.out.println("6.O4U organic natural");
+		 System.out.println("7.Dev Ayurveda ");
+		 System.out.println("");
+		 System.out.println("##################################################");
+		 
+		 Scanner sc=new Scanner(System.in);
+		 int b= sc.nextInt();
+		  
+		  switch(b)
+		  {
+		  case 1:
+			  System.out.println("Indic Wisdom Wood pressed Walnut oil");
+			  System.out.println("Name          : Indic Wisdom Wood pressed  ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 899/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+		  case 2:
+			  System.out.println("caraway Walnut oil");
+			  System.out.println("Name          : caraway ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 799/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 3:
+			  System.out.println("H & O Walnut oil");
+			  System.out.println("Name          : H & O ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 799/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  
+		  case 4:
+			  System.out.println("Hillipure Organic Cold pressed Walnut oil");
+			  System.out.println("Name          : Hillipure Organic Cold pressed ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 999/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 5:
+			  System.out.println("Nature's Absolute Organic Walnut oil ");
+			  System.out.println("Name          : Nature's Absolute Organic");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 1199/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 6:
+			  System.out.println("O4U organic natural Walnut oil ");
+			  System.out.println("Name          : O4U organic natural ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 1099/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 7:
+			  System.out.println("Dev Ayurveda Walnut oil ");
+			  System.out.println("Name          : Dev Ayurveda ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 999/-");
+			  System.out.println("source type   : Walnut oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+			  default:
+					System.out.println("");
+    				System.out.println("You Select the Wrong option ");
+    				System.out.println();
+    				System.out.println("Directing to the walnut oil");
+    				System.out.println("----->>>");
+    				walnut();
+    				
+		  }
+	 }
+ }
+  
+ 
+ class oil9 extends oil
+ {
+	 public static void grapeseed()
+	 {
+		 System.out.println("===============================================");
+		 System.out.println("Click the Which Grapeseed oil brand do you want to buy:- ");
+		 System.out.println("===============================================");
+		 
+		 System.out.println("1.Boitique Advanced Organics ");
+		 System.out.println("2.Naturalis Essence Of Nature ");
+		 System.out.println("3.All Naturals 100% Pure");
+		 System.out.println("4.Soulflower ");
+		 System.out.println("5.Mystiq Living Originals");
+		 System.out.println("6.Bon Austin 100% Pure&Naturals");
+		 System.out.println("7.Deve Herbes Pure ");
+		 System.out.println("");
+		 System.out.println("===============================================");
+		 
+		 Scanner sc=new Scanner(System.in);
+		 int b= sc.nextInt();
+		  
+		  switch(b)
+		  {
+		  case 1:
+			  System.out.println("Boitique Advanced Organics Grapesseed oil");
+			  System.out.println("Name          : Boitique Advanced Organics ");
+			  System.out.println("Litre         : 30ml");
+			  System.out.println("price         : 250/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+		  case 2:
+			  System.out.println("Naturalis Essence Of Nature Grapesseed oil");
+			  System.out.println("Name          : Naturalis Essence Of Nature ");
+			  System.out.println("Litre         : 400ml");
+			  System.out.println("price         : 418/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 3:
+			  System.out.println("All Naturals 100% Pure Grapesseed oil");
+			  System.out.println("Name          : All Naturals 100% Pure");
+			  System.out.println("Litre         : 30ml");
+			  System.out.println("price         : 275/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  
+		  case 4:
+			  System.out.println("Soulflower Grapesseed oil");
+			  System.out.println("Name          : Soulflower ");
+			  System.out.println("Litre         : 30ml");
+			  System.out.println("price         : 499/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 5:
+			  System.out.println("Mystiq Living Originals Grapesseed oil ");
+			  System.out.println("Name          : Mystiq Living Originals");
+			  System.out.println("Litre         : 30ml");
+			  System.out.println("price         : 349/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 6:
+			  System.out.println("Bon Austin 100% Pure&Naturals Grapesseed oil ");
+			  System.out.println("Name          : Bon Austin 100% Pure&Naturals ");
+			  System.out.println("Litre         : 100ml");
+			  System.out.println("price         : 410/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 7:
+			  System.out.println("Deve Herbes Pure Grapesseed oil ");
+			  System.out.println("Name          : Deve Herbes Pure ");
+			  System.out.println("Litre         : 30ml");
+			  System.out.println("price         : 296/-");
+			  System.out.println("source type   : Grapesseed oil");
+			  System.out.println("Usage Type    : Skin");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+			  default:
+					System.out.println("");
+    				System.out.println("You Select the Wrong option ");
+    				System.out.println();
+    				System.out.println("Directing to the Grapesseed oil");
+    				System.out.println("----->>>");
+    				grapeseed();
+    				
+		  }
+	 }
+ }
+  
+     
+ class oil10 extends oil
+ {
+	 public static void Sesame()
+	 {
+		 System.out.println("===============================================");
+		 System.out.println("Click the Which Sesame oil brand do you want to buy:- ");
+		 System.out.println("===============================================");
+		 System.out.println("1.Amazon Brand-Vedaka  ");
+		 System.out.println("2.Puvi 1l Cold pressed ");
+		 System.out.println("3.BNB Virgin");
+		 System.out.println("4.Anjali Cold Pressed Gingelly ");
+		 System.out.println("5.Anveshan Wood Pressed Black");
+		 System.out.println("6.King Brand Agmark Gingelly");
+		 System.out.println("7.Idhayam ");
+		 System.out.println("");
+		 System.out.println("===============================================");
+		 
+		 Scanner sc=new Scanner(System.in);
+		 int b= sc.nextInt();
+		  
+		  switch(b)
+		  {
+		  case 1:
+			  System.out.println("Amazon Brand-Vedaka Sesame oil");
+			  System.out.println("Name          : Amazon Brand-Vedaka ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 385/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+		  case 2:
+			  System.out.println("Puvi 1l Cold pressed Sesame oil");
+			  System.out.println("Name          : Puvi 1l Cold pressed ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 578/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 3:
+			  System.out.println("BNB Virgin Sesame oil");
+			  System.out.println("Name          : BNB Virgin");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 342/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  
+		  case 4:
+			  System.out.println("Anjali Cold Pressed Gingelly Sesame oil");
+			  System.out.println("Name          : Anjali Cold Pressed Gingelly ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 1900/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 5:
+			  System.out.println("Anveshan Wood Pressed Black Sesame oil ");
+			  System.out.println("Name          : Anveshan Wood Pressed Black");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 629/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 6:
+			  System.out.println("King Brand Agmark Gingelly Sesame oil ");
+			  System.out.println("Name          : King Brand Agmark Gingelly ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 300/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 7:
+			  System.out.println(" Idhayam Sesame oil ");
+			  System.out.println("Name          : Idhayam ");
+			  System.out.println("Litre         : 1l");
+			  System.out.println("price         : 858/-");
+			  System.out.println("source type   : Sesame oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+			  default:
+					System.out.println("");
+    				System.out.println("You Select the Wrong option ");
+    				System.out.println();
+    				System.out.println("Directing to the Sesame oil");
+    				System.out.println("----->>>");
+    				Sesame();
+    				
+		  }
+	 }
+ } 
+
+ class oil11 extends oil
+ {
+	 public static void hemp()
+	 {
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 System.out.println("Click the Which Hemp oil brand are you want to buy:- ");
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 
+		 System.out.println("1.Caraway  ");
+		 System.out.println("2.Skivia");
+		 System.out.println("3.Trikuta ");
+		 System.out.println("4.HM Herbel Me ");
+		 System.out.println("5.Hillipure Organic");
+		 System.out.println("6.Naturesack");
+		 System.out.println("7.SoulTree ");
+		 System.out.println("8.Beardo  ");
+		 System.out.println("9.Boheco ");
+		 System.out.println("10.Cannasis ");
+		 System.out.println("");
+		 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		 
+		 Scanner sc=new Scanner(System.in);
+		 int b= sc.nextInt();
+		  
+		  switch(b)
+		  {
+		  case 1:
+			  System.out.println("Caraway Hemp oil");
+			  System.out.println("Name          : .Caraway ");
+			  System.out.println("Litre         : 236ml");
+			  System.out.println("price         : 999/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+		  case 2:
+			  System.out.println("Skivia Hemp oil");
+			  System.out.println("Name          : Skivia ");
+			  System.out.println("Litre         : 100ml");
+			  System.out.println("price         : 399/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life     : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 3:
+			  System.out.println("Trikuta Hemp oil");
+			  System.out.println("Name          : Trikuta");
+			  System.out.println("Litre         : 20ml");
+			  System.out.println("price         : 495/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  
+		  case 4:
+			  System.out.println("HM Herbel Me Hemp oil");
+			  System.out.println("Name          : HM Herbel Me ");
+			  System.out.println("Litre         : 50ml");
+			  System.out.println("price         : 420/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 5:
+			  System.out.println("Hillipure Organic Hemp oil ");
+			  System.out.println("Name          : Hillipure Organic");
+			  System.out.println("Litre         : 65ml");
+			  System.out.println("price         : 249/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 6:
+			  System.out.println("Naturesack  Hemp oil ");
+			  System.out.println("Name          : Naturesack ");
+			  System.out.println("Litre         : 100ml");
+			  System.out.println("price         : 499/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+			  
+		  case 7:
+			  System.out.println(" SoulTree Hemp oil ");
+			  System.out.println("Name          : SoulTree ");
+			  System.out.println("Litre         : 120ml");
+			  System.out.println("price         : 1495/-");
+			  System.out.println("source type   : Hemp oil");
+			  System.out.println("Shelf Life    : 24months");
+			  System.out.println("");
+			  break;
+		  case 8:
+				System.out.println("Beardo Hemp oil ");
+				System.out.println("Name        : Beardo");
+  			  System.out.println("Litre         : 100ml");
+  			  System.out.println("price         : 211/-");
+  			  System.out.println("source type   : Hemp oil ");
+  			  System.out.println("Shelf Life    : 24months");
+  			  System.out.println("");
+				break;
+			case 9:
+				System.out.println("Boheco Hemp oil");
+			  System.out.println("Name          : Boheco");
+  			  System.out.println("Litre         : 100l");
+  			  System.out.println("price         : 495/-");
+  			  System.out.println("source type   : Hemp oil");
+  			  System.out.println("Shelf Life    : 24months");
+  			  System.out.println("");
+				break;
+			case 10:
+				System.out.println("Cannasis Hemp oil");
+			  System.out.println("Name          : Cannasis ");
+  			  System.out.println("Litre         : 30ml");
+  			  System.out.println("price         : 199/-");
+  			  System.out.println("source type   : Hemp oil");
+  			  System.out.println("Shelf Life    : 24months");
+  			  System.out.println("");
+  			  break;
+			  
+			  default:
+					System.out.println("");
+    				System.out.println("You Select the Wrong option ");
+    				System.out.println();
+    				System.out.println("Directing to the Hemp oil");
+    				System.out.println("----->>>");
+    				hemp();
+    				
+		  }
+	 }
+ } 
+
+  class CustomerDetails
+  {
+	  private static String Customer_name;
+	  private static double Customer_Contact_no ;
+	  private static String Customer_Adress;
+	  
+	  public void cust()
+	  {
+		  CustomerDetails csd = new oil();
+		  oil l =(oil)csd;
+		 
+		  
+	  }
+	  public static void customerdetails()
+	  {
+		  System.out.println("--------------------------------------------------------------");
+		  System.out.println("              PLEASE ENTER YOUR DETAILS                        ");
+		  System.out.println("--------------------------------------------------------------");
+
+			System.out.println("Enter Name: ");
+			Scanner sc=new Scanner (System.in);
+			String name=sc.nextLine();
+			
+			System.out.println("Enter Phone: ");
+			Scanner sc2=new Scanner (System.in);
+			double a = sc2.nextDouble();
+			
+
+			System.out.println("Enter Address:");
+			Scanner sc3=new Scanner(System.in);
+			String address=sc3.nextLine();
+			System.out.println();
+			System.out.println("Thank you for entering the your details");
+			System.out.println();
+		  
+	  }
+	  public static void displaycustomerdetails()
+	  {
+			System.out.println("======================Bill========================");
+			System.out.println("");
+			CustomerDetails cd =new CustomerDetails();
+			System.out.println("Name : "+Customer_name);
+			System.out.println("phone : "+Customer_Contact_no);
+			System.out.println("address : "+Customer_Adress);
+	  }
+	  public static void final_bill(double amount)
+	  {
+		  System.out.println("Total amt:"+amount+"Rupees");
+	  }
+	  
+  }
+  
+  
+
+
+  	 
+  	class Payment extends CustomerDetails {
+  		Scanner sc = new Scanner(System.in);
+
+  		public void payment() {
+  			System.out.println("PRESS 1 FOR ONLINE(GPay / PhonePay / PayTM)");
+  			System.out.println("PRESS 2 FOR CASH PAYMENT");
+  			int choice = sc.nextInt();
+  			switch (choice) {
+  			case 1:
+  				upiPayment();
+
+  			break;
+  			
+  			case 2:
+  				cash();
+  	         
+  			default:
+  				break;
+  			}
+  		}
+
+  		public void upiPayment() {
+  			
+  			try {
+  			System.out.println("============================");
+  			System.out.println("PLEASE VERIFY YOUR MOBILE NUMBER");
+  			Scanner sc = new Scanner(System.in);
+  			long a = sc.nextLong();
+
+  			System.out.println("PLEASE ENTER YOUR UPI ID OR UPI NUMBER");
+  			Scanner sc1 = new Scanner(System.in);
+  			String b=sc1.nextLine();
+  			
+  			System.out.println("ENTER YOUR UPI PIN :");
+  			Scanner sc2 = new Scanner(System.in);
+  	        a= sc. nextLong();
+
+  			System.out.println("ENTER THE AMOUNT OF YOUR BILL");
+  			Scanner sc3 = new Scanner(System.in);
+  			double price = sc.nextDouble();
+
+  			System.out.println("!!!!!!LOADING!!!!!!!");
+  			System.out.println("PRESS 1 To continue");
+  			Scanner sc4 = new Scanner(System.in);
+  			 a= sc. nextLong();
+  			 System.out.println("TRANSACTION SUCCESSFULL");
+  			 System.out.println("============================");
+  			 System.out.println("THANK U PLS DO VISIT AGAIN");
+  			
+  				
+  			} catch (Exception e) {
+  				System.out.println("INVALID INPUT\n----------------\n!!!!!!!!!LOAADING!!!!!!!!!!!");
+  				System.out.println("RESTART U R PROCESS");
+  				upiPayment();
+  				
+  			}
+  			
+  		}
+  		
+  		public void cash() 
+  		 {
+  			System.out.println("============================");
+  	        System.out.println("\nPLEASE VISIT OUR SHOP NEAR YOUR HOME FOR PAYMENT");
+  	        System.out.println("THANKS FOR YOUR TIME! PLESE VISIT US AGAIN!");
+  			
+  			
+  		  }
+  	}
+  	
+  	
+  	
+  	
+  	
+class driver15
+{
+	public static void main(String[]args)
+	{
+		
+		 oil.oiltypes();//mcs by usingf ref var
+		 CustomerDetails c = new CustomerDetails();
+		 c.customerdetails();
+		 c.cust();
+		
+		 Payment pa=new Payment();
+	       pa.upiPayment();
+	       
+		
+		 
+		
+		 
+		 
+		 
+
+
+	}
+}
